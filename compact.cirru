@@ -1,10 +1,10 @@
 
 {} (:package |app)
-  :configs $ {} (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |phlox/compact.cirru) (:version nil)
+  :configs $ {} (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |corokia/compact.cirru) (:version nil)
   :files $ {}
     |app.main $ {}
       :ns $ quote
-        ns app.main $ :require ([] phlox.core :refer $ [] g >> render-app! handle-tree-event defcomp update-states circle rect text touch-area) ([] phlox.comp :refer $ [] comp-drag-point comp-slider) ([] phlox.complext :refer $ [] c* c+ c- rad-point)
+        ns app.main $ :require ([] corokia.core :refer $ [] g >> render-app! handle-tree-event defcomp update-states circle rect text touch-area) ([] corokia.comp :refer $ [] comp-drag-point comp-slider) ([] corokia.complext :refer $ [] c* c+ c- rad-point)
       :defs $ {}
         |render-page $ quote
           defn render-page ()
@@ -42,7 +42,7 @@
                 :render $ fn (dict)
                   g
                     {} (:x 0) (:y 0)
-                    circle ([] 100 100) 20 $ {} (:fill-color $ [] 200 80 70)
+                    circle 20 $ {} (:position $ [] 100 100) (:fill-color $ [] 200 80 70)
                     get dict :d
                 :actions $ {}
         |reload! $ quote
