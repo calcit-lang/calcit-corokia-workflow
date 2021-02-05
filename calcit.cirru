@@ -15,7 +15,7 @@
                 |j $ {} (:type :expr) (:by |u0) (:at 1606311445673)
                   :data $ {}
                     |T $ {} (:type :leaf) (:by |u0) (:at 1606311445877) (:text |[])
-                    |j $ {} (:type :leaf) (:by |u0) (:at 1606311453632) (:text |phlox.core)
+                    |j $ {} (:type :leaf) (:by |u0) (:at 1606311453632) (:text |corokia.core)
                     |r $ {} (:type :leaf) (:by |u0) (:at 1606311454451) (:text |:refer)
                     |v $ {} (:type :expr) (:by |u0) (:at 1606311454638)
                       :data $ {}
@@ -33,7 +33,7 @@
                 |r $ {} (:type :expr) (:by |u0) (:at 1606311491783)
                   :data $ {}
                     |T $ {} (:type :leaf) (:by |u0) (:at 1606311492057) (:text |[])
-                    |j $ {} (:type :leaf) (:by |u0) (:at 1606311500078) (:text |phlox.comp)
+                    |j $ {} (:type :leaf) (:by |u0) (:at 1606311500078) (:text |corokia.comp)
                     |r $ {} (:type :leaf) (:by |u0) (:at 1606311501263) (:text |:refer)
                     |v $ {} (:type :expr) (:by |u0) (:at 1606311501469)
                       :data $ {}
@@ -43,7 +43,7 @@
                 |v $ {} (:type :expr) (:by |u0) (:at 1606311511465)
                   :data $ {}
                     |T $ {} (:type :leaf) (:by |u0) (:at 1606311511722) (:text |[])
-                    |j $ {} (:type :leaf) (:by |u0) (:at 1606311518807) (:text |phlox.complext)
+                    |j $ {} (:type :leaf) (:by |u0) (:at 1606311518807) (:text |corokia.complext)
                     |r $ {} (:type :leaf) (:by |u0) (:at 1606311519587) (:text |:refer)
                     |v $ {} (:type :expr) (:by |u0) (:at 1606311519805)
                       :data $ {}
@@ -287,11 +287,6 @@
                                   |r $ {} (:type :expr) (:by |u0) (:at 1606313901194)
                                     :data $ {}
                                       |T $ {} (:type :leaf) (:by |u0) (:at 1606313902680) (:text |circle)
-                                      |j $ {} (:type :expr) (:by |u0) (:at 1606313903041)
-                                        :data $ {}
-                                          |T $ {} (:type :leaf) (:by |u0) (:at 1606313903245) (:text |[])
-                                          |j $ {} (:type :leaf) (:by |u0) (:at 1606313904845) (:text |100)
-                                          |r $ {} (:type :leaf) (:by |u0) (:at 1606313905345) (:text |100)
                                       |r $ {} (:type :leaf) (:by |u0) (:at 1606313907021) (:text |20)
                                       |v $ {} (:type :expr) (:by |u0) (:at 1606313908491)
                                         :data $ {}
@@ -305,6 +300,14 @@
                                                   |j $ {} (:type :leaf) (:by |u0) (:at 1606313915116) (:text |200)
                                                   |r $ {} (:type :leaf) (:by |u0) (:at 1606313916328) (:text |80)
                                                   |v $ {} (:type :leaf) (:by |u0) (:at 1606313917140) (:text |70)
+                                          |b $ {} (:type :expr) (:by |u0) (:at 1612508678095)
+                                            :data $ {}
+                                              |T $ {} (:type :leaf) (:by |u0) (:at 1612508679562) (:text |:position)
+                                              |j $ {} (:type :expr) (:by |u0) (:at 1612508680467)
+                                                :data $ {}
+                                                  |T $ {} (:type :leaf) (:by |u0) (:at 1612508680467) (:text |[])
+                                                  |j $ {} (:type :leaf) (:by |u0) (:at 1612508680467) (:text |100)
+                                                  |r $ {} (:type :leaf) (:by |u0) (:at 1612508680467) (:text |100)
                                   |v $ {} (:type :expr) (:by |u0) (:at 1606314481852)
                                     :data $ {}
                                       |T $ {} (:type :leaf) (:by |u0) (:at 1606314482731) (:text |get)
@@ -380,4 +383,4 @@
                   |D $ {} (:type :leaf) (:by |u0) (:at 1606370713438) (:text |;)
         :proc $ {} (:type :expr) (:by |u0) (:at 1606310745262) (:data $ {})
         :configs $ {} (:extension nil)
-  :configs $ {} (:extension |.cljs) (:output |src) (:port 6001) (:local-ui? false) (:compact-output? true) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |phlox/compact.cirru)
+  :configs $ {} (:extension |.cljs) (:output |src) (:port 6001) (:local-ui? false) (:compact-output? true) (:init-fn |app.main/main!) (:reload-fn |app.main/reload!) (:modules $ [] |corokia/compact.cirru)
