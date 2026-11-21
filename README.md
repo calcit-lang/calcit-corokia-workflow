@@ -1,26 +1,19 @@
+# Corokia Workflow
 
-Phlox Calcit Workflow
-----
+展示原 Corokia 示例源码的 Respo 页面。原运行时解释器已经退役，页面保留示例入口。
 
-> for phlox.calcit .
+## 使用者注意
 
-### Usages
+使用 Calcit 和 `@calcit/procs` 0.44.0，以及配套的 Respo 0.19.13 和 Respo UI 0.15.7。更新后重新安装依赖并构建；Respo 更新可能导致样式差异。
 
-Install [calcit-runner](https://github.com/Cirru/calcit-runner.nim) to run demo:
 ```bash
-cr
+corepack enable
+yarn install --immutable
+caps --strict --ci
+caps verify --toolchain
+calcit --check-only
+calcit fix --workflow strict --verify
+yarn build
 ```
 
-Notice that the loaded modules comes from [phlox.calcit](https://github.com/Quamolit/phlox.calcit).
-
-### Difference from `phlox-workflow`.
-
-Originally Phlox as implemented based on ClojureScript and PIXI.js . However current implementation with Nim and Cario costs less memory, although with far fewer features. I prefer using Nim's version since it's controlled by Cirru ecosystem.
-
-### Workflow
-
-https://github.com/calcit-lang/calcit-workflow
-
-### License
-
-MIT
+源码使用 `calcit.cirru`，生成的 `js-out/` 和 `dist/` 不提交。主分支推送按原路径部署前端；PR 仅构建，不部署到主站。
