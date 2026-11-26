@@ -26,11 +26,12 @@
               div
                 {} $ :style $ {} (:padding "|12px 16px") (:color |#555)
                 <> "|The original runtime interpreter has been retired. Demo sources remain available below."
-              list->
+              respo.core/keyed->
                 {} $ :style $ merge ui/expand
                   {} $ :overflow :auto
                 map-indexed demos $ fn (idx demo)
-                  [] idx $ comp-demo demo
+                  hint-fn $ Fn Number (Map Tag String) (-> respo.schema/ChildPair)
+                  respo.core/keyed-component idx $ comp-demo demo
           :examples $ []
           :schema $ quote $ Fn (-> respo.schema/Component)
         'comp-demo $ %{} 'CodeEntry (:doc |)
@@ -66,7 +67,7 @@
       :ns $ %{} 'NsEntry (:doc |)
         :code $ quote $ ns app.comp.container
           :require (respo-ui.core :as ui)
-            respo.core :refer $ defcomp div span a <> list->
+            respo.core :refer $ defcomp div span a <>
             respo.comp.space :refer $ =<
     'app.main $ %{} 'FileEntry
       :defs $ {}
