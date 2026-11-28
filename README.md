@@ -4,7 +4,7 @@
 
 ## 使用者注意
 
-使用 Calcit 和 `@calcit/procs` 0.46.0，以及配套的 Respo 0.20.0 和 Respo UI 0.16.6。更新后重新安装依赖并构建；Respo 更新可能导致样式差异。
+使用 Calcit 和 `@calcit/procs` 0.47.1，以及配套的 Respo 0.20.1 和 Respo UI 0.16.7。更新后重新安装依赖并构建；Respo 更新可能导致样式差异。
 
 ```bash
 corepack enable
